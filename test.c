@@ -66,8 +66,12 @@ int main()
   strcpy(string3, "aBcD");
   assert(!hasUniqueChars(string3));
 
+  strcpy(string3, "abcdefghijklmnopqrstuvwxyz");
+  assert(!hasUniqueChars(string3));
+
   strcpy(string3, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
   assert(!hasUniqueChars(string3));
+
   // other examples that should fail that you can place in strings
   // are \0 or \t or \r
   // See problem description for more details about escape sequences
